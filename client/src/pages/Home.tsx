@@ -2,7 +2,7 @@
  * Landing Page: Planilha de Gestão Financeira para Espetinhos
  * Design: "Brasa & Dados" — Industrial-Gastronômica
  * Paleta: Laranja-brasa (#E85D26), Verde-lucro (#22C55E), Carvão (#2D1810), Creme (#FAFAF9)
- * Tipografia: Oswald (display), Source Sans 3 (body), DM Sans (dados)
+ * Tipografia: Poppins (display), Montserrat (body)
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -59,7 +59,7 @@ function AnimatedCounter({ target, prefix = "", suffix = "", duration = 2000 }: 
   }, [isInView, target, duration]);
 
   return (
-    <span ref={ref} className="font-['DM_Sans'] font-bold">
+    <span ref={ref} className="font-['Poppins'] font-bold">
       {prefix}{count.toLocaleString("pt-BR")}{suffix}
     </span>
   );
@@ -74,7 +74,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-5 text-left gap-4"
       >
-        <span className="font-['Oswald'] text-lg md:text-xl font-medium text-carvao">
+        <span className="font-['Poppins'] text-lg md:text-xl font-medium text-carvao">
           {question}
         </span>
         {open ? (
@@ -102,7 +102,7 @@ function CtaButton({ children, className = "" }: { children: React.ReactNode; cl
     <a href={CHECKOUT_URL}>
       <Button
         size="lg"
-        className={`bg-brasa hover:bg-brasa-dark text-white font-['Oswald'] text-lg md:text-xl uppercase tracking-wider px-8 py-6 md:px-12 md:py-7 rounded-lg pulse-brasa transition-all duration-300 hover:scale-105 shadow-lg shadow-brasa/30 ${className}`}
+        className={`bg-brasa hover:bg-brasa-dark text-white font-['Poppins'] text-sm md:text-base font-semibold uppercase tracking-wide px-6 py-3 md:px-8 md:py-4 rounded-lg pulse-brasa transition-all duration-300 hover:scale-105 shadow-lg shadow-brasa/30 ${className}`}
       >
         {children}
         <ArrowRight className="ml-2 w-5 h-5" />
@@ -141,7 +141,7 @@ function BenefitCard({ icon: Icon, title, description, delay }: {
         <div className="w-14 h-14 rounded-xl bg-brasa/10 flex items-center justify-center mb-5 group-hover:bg-brasa/20 transition-colors">
           <Icon className="w-7 h-7 text-brasa" />
         </div>
-        <h3 className="font-['Oswald'] text-xl font-semibold text-carvao mb-3">{title}</h3>
+        <h3 className="font-['Poppins'] text-xl font-semibold text-carvao mb-3">{title}</h3>
         <p className="text-carvao/70 leading-relaxed">{description}</p>
       </div>
     </AnimatedSection>
@@ -187,7 +187,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="font-['Oswald'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6"
+              className="font-['Poppins'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15] mb-6"
             >
               Chega de{" "}
               <span className="text-brasa">Perder Dinheiro!</span>
@@ -216,7 +216,7 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 items-start"
             >
-              <CtaButton>Quero Controlar Meu Lucro Agora</CtaButton>
+              <CtaButton>Quero Lucrar Mais</CtaButton>
               <div className="flex items-center gap-2 text-white/60 text-sm mt-2 sm:mt-auto">
                 <ShieldCheck className="w-4 h-4" />
                 <span>7 dias de garantia incondicional</span>
@@ -236,7 +236,7 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="font-['Oswald'] text-3xl md:text-5xl font-bold text-carvao mb-6">
+              <h2 className="font-['Poppins'] text-3xl md:text-5xl font-bold text-carvao mb-6">
                 Você sabe quanto seu espetinho{" "}
                 <span className="text-brasa">realmente lucra?</span>
               </h2>
@@ -286,7 +286,7 @@ export default function Home() {
               <span className="inline-block bg-brasa/20 text-brasa-light text-sm font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-4">
                 O que você vai receber
               </span>
-              <h2 className="font-['Oswald'] text-3xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-['Poppins'] text-3xl md:text-5xl font-bold text-white mb-4">
                 Tenha o Controle Total do Seu Negócio
               </h2>
               <p className="text-white/60 text-lg max-w-2xl mx-auto">
@@ -313,7 +313,7 @@ export default function Home() {
                   <FileSpreadsheet className="w-4 h-4" />
                   Produto Principal
                 </div>
-                <h3 className="font-['Oswald'] text-3xl md:text-4xl font-bold text-white mb-4">
+                <h3 className="font-['Poppins'] text-3xl md:text-4xl font-bold text-white mb-4">
                   Planilha Mestra <span className="text-ouro">(Formato CSV)</span>
                 </h3>
                 <p className="text-white/70 text-lg leading-relaxed mb-6">
@@ -351,7 +351,7 @@ export default function Home() {
                   <Gift className="w-4 h-4" />
                   Bônus Exclusivo
                 </div>
-                <h3 className="font-['Oswald'] text-3xl md:text-4xl font-bold text-white mb-4">
+                <h3 className="font-['Poppins'] text-3xl md:text-4xl font-bold text-white mb-4">
                   Acesso ao <span className="text-lucro">Aplicativo</span>
                 </h3>
                 <p className="text-white/70 text-lg leading-relaxed mb-6">
@@ -401,7 +401,7 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h2 className="font-['Oswald'] text-3xl md:text-5xl font-bold text-carvao mb-4">
+              <h2 className="font-['Poppins'] text-3xl md:text-5xl font-bold text-carvao mb-4">
                 Com a Planilha + App, <span className="text-brasa">você vai:</span>
               </h2>
             </div>
@@ -448,7 +448,7 @@ export default function Home() {
 
           <AnimatedSection delay={0.4}>
             <div className="text-center mt-12">
-              <CtaButton>Sim! Eu Quero Mais Lucro e Menos Dor de Cabeça</CtaButton>
+              <CtaButton>Garantir Minha Planilha</CtaButton>
             </div>
           </AnimatedSection>
         </div>
@@ -473,7 +473,7 @@ export default function Home() {
                 <span className="inline-block bg-ouro/20 text-ouro text-sm font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
                   Quem está por trás
                 </span>
-                <h2 className="font-['Oswald'] text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="font-['Poppins'] text-3xl md:text-4xl font-bold text-white mb-6">
                   A experiência de <span className="text-ouro">10+ anos</span> que você precisa
                 </h2>
                 <div className="space-y-4 text-white/70 text-lg leading-relaxed">
@@ -509,7 +509,7 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <div className="text-center mb-12">
-              <h2 className="font-['Oswald'] text-3xl md:text-5xl font-bold text-carvao mb-4">
+              <h2 className="font-['Poppins'] text-3xl md:text-5xl font-bold text-carvao mb-4">
                 E para você lucrar <span className="text-brasa">ainda mais...</span>
               </h2>
               <p className="text-carvao/70 text-lg max-w-2xl mx-auto">
@@ -531,7 +531,7 @@ export default function Home() {
                   Bônus Especial Incluso
                 </div>
 
-                <h3 className="font-['Oswald'] text-2xl md:text-4xl font-bold text-white mb-4">
+                <h3 className="font-['Poppins'] text-2xl md:text-4xl font-bold text-white mb-4">
                   Protocolo "Do Zero aos 2 Mil por Semana"
                 </h3>
 
@@ -565,7 +565,7 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <div className="text-center mb-12">
-              <h2 className="font-['Oswald'] text-3xl md:text-5xl font-bold text-carvao mb-4">
+              <h2 className="font-['Poppins'] text-3xl md:text-5xl font-bold text-carvao mb-4">
                 Dúvidas <span className="text-brasa">Frequentes</span>
               </h2>
             </div>
@@ -616,7 +616,7 @@ export default function Home() {
 
         <div className="relative z-10 container text-center">
           <AnimatedSection>
-            <h2 className="font-['Oswald'] text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h2 className="font-['Poppins'] text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Sua Decisão <span className="text-brasa">HOJE</span>,<br />
               Seu Lucro <span className="text-lucro">AMANHÃ</span>!
             </h2>
@@ -639,21 +639,21 @@ export default function Home() {
                       <CheckCircle2 className="w-4 h-4 text-lucro shrink-0" />
                       {row.item}
                     </span>
-                    <span className="line-through text-white/40 font-['DM_Sans']">{row.value}</span>
+                    <span className="line-through text-white/40 font-['Poppins']">{row.value}</span>
                   </div>
                 ))}
               </div>
               <div className="text-center">
                 <p className="text-white/50 text-sm mb-1">Tudo isso por apenas:</p>
-                <p className="font-['DM_Sans'] text-5xl md:text-6xl font-bold text-lucro">
-                  R$ 39<span className="text-3xl">,90</span>
+                <p className="font-['Poppins'] text-5xl md:text-6xl font-bold text-lucro">
+                  R$ 67<span className="text-3xl">,00</span>
                 </p>
-                <p className="text-white/40 text-xs mt-1">ou o valor que você definir no checkout</p>
+                <p className="text-white/60 text-sm mt-2">ou <strong className="text-lucro">9x de R$ 8,76</strong></p>
               </div>
             </div>
 
-            <CtaButton className="text-xl md:text-2xl px-12 py-7">
-              Quero Minha Planilha + App Agora
+            <CtaButton>
+              Comprar Agora
             </CtaButton>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-white/50 text-sm">
