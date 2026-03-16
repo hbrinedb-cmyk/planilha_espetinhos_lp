@@ -30,7 +30,7 @@ const CHECKOUT_URL = "#comprar";
 const IMAGES = {
   hero: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/hero-espetinhos-kyT7aUaPrDg8ZtSMVzpNvN.webp",
   app: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/app-mockup-Xbwnbav8ruKkagGKpeNiZv.webp",
-  familia: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/familia-empreendedora-gMrktLpEcEw5gpGodqNRw9.webp",
+  familia: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/autoridade-real_0b2b30d8.png",
   planilha: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/planilha-csv-VuuSQzV9Fe6oEGZBHkhB6X.webp",
 };
 
