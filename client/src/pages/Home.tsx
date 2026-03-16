@@ -32,6 +32,7 @@ const IMAGES = {
   app: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/app-mockup-Xbwnbav8ruKkagGKpeNiZv.webp",
   familia: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/autoridade-real_0b2b30d8.png",
   planilha: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/planilha-csv-VuuSQzV9Fe6oEGZBHkhB6X.webp",
+  depoimento: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/depoimento-lion_0d9b075f.mp4",
 };
 
 /* ─── Animated Counter ─── */
@@ -501,6 +502,67 @@ export default function Home() {
               </div>
             </AnimatedSection>
           </div>
+        </div>
+      </section>
+
+      {/* ─── TESTIMONIAL SECTION ─── */}
+      <section className="py-16 md:py-24 bg-creme">
+        <div className="container">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <span className="inline-block bg-lucro/10 text-lucro text-sm font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-4">
+                Prova Real
+              </span>
+              <h2 className="font-['Poppins'] text-3xl md:text-5xl font-bold text-carvao mb-4">
+                Quem usa, <span className="text-brasa">recomenda!</span>
+              </h2>
+              <p className="text-carvao/70 text-lg max-w-2xl mx-auto">
+                Veja o que nossos clientes estão dizendo sobre a Planilha de Gestão Financeira.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div className="max-w-3xl mx-auto">
+              <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+                {/* Video */}
+                <div className="aspect-[9/16] max-h-[600px] mx-auto bg-black">
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                    poster=""
+                  >
+                    <source src={IMAGES.depoimento} type="video/mp4" />
+                    Seu navegador não suporta vídeos.
+                  </video>
+                </div>
+
+                {/* Caption */}
+                <div className="p-6 md:p-8">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex -space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-ouro fill-ouro" />
+                      ))}
+                    </div>
+                    <span className="text-carvao/50 text-sm">Cliente verificado</span>
+                  </div>
+                  <p className="text-carvao/80 text-base leading-relaxed italic">
+                    "A planilha mudou completamente a forma como eu controlo meu negócio de espetinhos. Agora sei exatamente quanto estou lucrando!"
+                  </p>
+                </div>
+              </div>
+
+              {/* More testimonials coming soon */}
+              <div className="mt-8 text-center">
+                <p className="text-carvao/40 text-sm">
+                  Mais depoimentos em breve...
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
