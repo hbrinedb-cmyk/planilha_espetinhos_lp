@@ -32,7 +32,7 @@ const IMAGES = {
   app: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/app-mockup-Xbwnbav8ruKkagGKpeNiZv.webp",
   familia: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/autoridade-real_0b2b30d8.png",
   planilha: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/planilha-csv-VuuSQzV9Fe6oEGZBHkhB6X.webp",
-  depoimento: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/depoimento-lion_0d9b075f.mp4",
+  depoimento: "https://d2xsxph8kpxj0f.cloudfront.net/310519663444745726/dnHEVqXutrHjcYmPxP9wwo/depoimento-lion-curto_988547f9.mp4",
 };
 
 /* ─── Animated Counter ─── */
